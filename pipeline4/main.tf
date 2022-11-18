@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azuredevops = {
       source  = "microsoft/azuredevops"
-      version = ">=0.1.0"
+      version = ">=0.3.0"
     }
     azurerm = {
       source = "hashicorp/azurerm"
@@ -35,7 +35,7 @@ variable "tfc_token" {}
 
 resource "azuredevops_build_definition" "build4" {
   project_id = var.project_id
-  name       = "04 - Organize Project with Terraform Cloud"
+  name       = "04 - Relocate State with Terraform Cloud target"
   path       = "\\pipelines"
 
   ci_trigger {
