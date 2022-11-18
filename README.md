@@ -36,7 +36,7 @@ export TF_VAR_azure_devops_project_name="azdo-primer-101"
 export TF_VAR_azure_devops_repo_name="pipeline-starter"
 export TF_VAR_azure_devops_org_name="hashicat-azdo"
 export TF_VAR_arm_client_secret=$ARM_CLIENT_SECRET
-export TF_VAR_tfc_org_name="interrupt-software"
+export TF_VAR_tfc_org_name="AcmePOV"
 export TF_VAR_tfc_token=$TFE_TOKEN
 ```
 ### Deployment
