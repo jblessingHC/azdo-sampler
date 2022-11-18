@@ -1,3 +1,5 @@
+# ## NOTE:  This project has been modified to work with VCS Integration and Terraform Cloud
+
 # Quick Start
 
 Prepare the required environment variables [environment variables](#environment-variables) for the Terraform Providers. Also, fill in the default values for the [Terraform variables](#terraform-variables) in the the [variables.tf](variables.tf) file, or declare Terraform variables. Here are examples of the values expressed on a Bash shell:
