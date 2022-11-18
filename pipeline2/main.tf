@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azuredevops = {
       source  = "microsoft/azuredevops"
-      version = ">=0.1.0"
+      version = ">=0.3.0"
     }
     azurerm = {
       source = "hashicorp/azurerm"
@@ -23,7 +23,7 @@ variable "branch_name" {}
 
 resource "azuredevops_build_definition" "build2" {
   project_id = var.project_id
-  name       = "02 - Hello Cloud, Let's Connect"
+  name       = "02 - Hello Azure Cloud, Let's Connect"
   path       = "\\pipelines"
 
   ci_trigger {
