@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azuredevops = {
       source  = "microsoft/azuredevops"
-      version = ">=0.1.0"
+      version = ">=0.3.0"
     }
   }
 }
@@ -13,7 +13,7 @@ variable "branch_name" {}
 
 resource "azuredevops_build_definition" "build1" {
   project_id = var.project_id
-  name       = "01 - Hello World, Let's Terraform"
+  name       = "01 - Hello World, Let's use Terraform Core OSS"
   path       = "\\pipelines"
 
   ci_trigger {
