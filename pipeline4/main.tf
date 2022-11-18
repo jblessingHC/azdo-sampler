@@ -19,7 +19,7 @@ data azurerm_client_config current {}
 variable "tfc_org_name" {}
 variable "project_name" {}
 variable "repo_name" {}
-variable "org_name" {}
+variable "azure_devops_org_name" {}
 variable "azuredevops_users_depends_on" {
   # the value doesn't matter; we're just using this variable
   # to propagate dependencies.
@@ -111,7 +111,7 @@ data "azuredevops_group" "project_contributors" {
 data "azuredevops_users" "user" {
   principal_name = element(data.azuredevops_users.all_users.users[*], 
       index(data.azuredevops_users.all_users.users[*].display_name, 
-      "${var.project_name} Build Service (${var.org_name})")).principal_name
+      "${var.project_name} Build Service (${var.azure_devops_org_name})")).principal_name
 }
 
 resource "azuredevops_group_membership" "membership" {
