@@ -13,7 +13,7 @@ variable "branch_name" {}
 
 resource "azuredevops_build_definition" "build1" {
   project_id = var.project_id
-  name       = "01 - Hello World, Let's use Terraform Core OSS"
+  name       = "01 - Hello World, Let's use Terraform Core OSS to create our respository"
   path       = "\\pipelines"
 
   ci_trigger {
